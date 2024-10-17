@@ -1,4 +1,3 @@
-# Data-Portfolio
 
 👋 Hello, I’m Ethan Thomas.
 
