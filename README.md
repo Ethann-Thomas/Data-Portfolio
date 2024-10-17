@@ -9,6 +9,4 @@
 
 💡 I enjoy being a leader and building communities in analytics & tech. I work on a committee to educate and provide events, resources, and a pipeline to data experts to upskill employees and foster a data-driven working community.
 
-📝 I share my thoughts on Medium, especially on how to break into the analytics field and how to network effectively.
-
 📫 How to reach me: Message me on [LinkedIn.]([url](https://www.linkedin.com/in/ethan-thomas-422b05179/))
