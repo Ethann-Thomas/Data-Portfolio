@@ -1,7 +1,7 @@
 
 👋 Hello, I’m Ethan Thomas.
 
-💼 I'm a data analyst currently working in technology for the Financial Services industry.
+💼 I'm a Data Analyst currently working in technology for the Financial Services industry.
 
 👀 I’m interested in data analysis, modeling, and visualization. My work typically focuses on automation, descriptive analytics, reporting & insights, and defining new metrics. The tools I primarily use are Power BI, Python, SQL, and any other ad hoc tools that are necessary to ensure project success.
 
