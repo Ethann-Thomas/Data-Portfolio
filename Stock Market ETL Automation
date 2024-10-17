@@ -1,0 +1,41 @@
+#Import Necessary Libraries
+import requests
+import pandas as pd
+import sqlalchemy
+
+# Establish API
+url = 'http://api.marketstack.com/v1/eod'
+access_key = 'unique_key'
+
+# Include the access key as a parameter in the URL
+params = {
+    'access_key': access_key,
+    'symbols': 'AAPL' 
+}
+
+#Set headers 
+header = {"Content Type": "application/json",
+          "Accept-Encoding":"deflate"}
+
+#Call the API 
+response = requests.get(url, headers = header, params = params)
+#View the resposne
+print(response)
+
+#Put data into JSON format and view the response
+responseData = response.json()
+print(responseData)
+
+#Normalize the data with a pandas dataframe
+df = pd.json_normalize(responseData, 'data')
+#View the normalized data
+print(df)
+
+#Create the engine that will deliver our data to a SQL table 
+engine = sqlalchemy.create_engine('mssql://servername/databasename')
+
+#Push the data to our table 
+df.to_sql(name='Name', con = engine, index = False, if_exists = 'append')
+
+
+#Automate the process using a scheduling tool
